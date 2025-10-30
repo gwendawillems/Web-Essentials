@@ -1,0 +1,55 @@
+/* Algemene lay-out */
+body {
+    font-family: Arial, sans-serif;
+    background: url("assets/hout.jpg") repeat;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+/* Container: bord + info */
+.container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* === Schaakbord === */
+table {
+    border-collapse: collapse;
+    border: 8px solid #3e2a19;
+    width: 480px;
+    height: 480px;
+    table-layout: fixed;
+}
+
+/* Elk vak */
+td {
+    width: 12.5%;
+    height: 12.5%;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url("assets/witte-marmer.jpg");
+    background-size: cover;
+}
+
+/* Afwisselend zwart patroon */
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background-image: url("assets/zwarte-marmer.jpg");
+}
+
+/* Schaakstukken centreren */
+img {
+    width: 40%;
+    height: auto;
+}
+
+/* === Infopaneel === */
+aside {
+    background-color: #f7f3e9;
+    border: 2px solid darkred;
+    padding: 20px;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px;
+}

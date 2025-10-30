@@ -1,0 +1,29 @@
+/* Plaats het raster in het midden van de pagina */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* De tabel zelf */
+.raster {
+    border-collapse: collapse;
+}
+
+/* Basisstijl voor alle cellen */
+.raster td {
+    border: 3px solid black;
+    width: 80px;
+    height: 80px;
+}
+
+/* Kleuren */
+.rood  { background-color: red;}
+.geel  { background-color: yellow; }
+.blauw { background-color: blue; }
+.groen { background-color: green; }
+.wit   { background-color: white; }
+

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("assets/hout.jpg") repeat;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* === SCHAAKBORD === */
+.schaakbord {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 480px;
+    aspect-ratio: 1 / 1; /* of height: 480px als je absolute hoogte wil */
+    border: 8px solid #3e2a19;
+}
+
+.vak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+
+/* Achtergronden */
+.wit {
+    background-image: url("assets/witte-marmer.jpg");
+}
+
+.zwart {
+    background-image: url("assets/zwarte-marmer.jpg");
+}
+
+/* Schaakstukken centreren en schalen */
+.vak img {
+    width: 40%;
+    height: auto;
+}
+
+/* === INFO === */
+.info {
+    background-color: #f7f3e9;
+    border: 2px solid darkred;
+    padding: 20px;
+    max-width: 200px;
+    box-shadow: 2px 2px 5px;
+}
